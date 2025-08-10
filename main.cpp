@@ -15,7 +15,8 @@ int main()
 	cout << "connected" << endl;
 
 	char buf[1024] = "hello";
-	auto success = sock.send(buf);
+	vector<char> msg(buf, buf + strlen(buf));
+	auto success = sock.send(msg);
 	if (success)
 		cout << "send : " << buf << endl;
 
