@@ -448,7 +448,6 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-*.vcxproj
 *.filters
 
 ### VisualStudio Patch ###
